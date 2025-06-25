@@ -62,10 +62,10 @@ function ProductCard({
           </p>
         </div>
         <div className="flex gap-[1.3rem] max-lg:gap-[.7rem] flex-wrap">
-          <p className="price text-[2.4rem] text-black satoshi-bold font-bold leading-[32.rem] max-lg:text-[2rem] max-lg:leading-[2.7rem]">
+          <p className="price text-[2.4rem] text-black satoshi-bold font-bold leading-[3.2rem] max-lg:text-[2rem] max-lg:leading-[2.7rem]">
             ${price}
           </p>
-          <p className="original-Price text-[2.4rem] text-black/40 line-through satoshi-bold font-bold leading-[32.rem] max-lg:text-[2rem] max-lg:leading-[2.7rem]">
+          <p className="original-Price text-[2.4rem] text-black/40 line-through satoshi-bold font-bold leading-[3.2rem] max-lg:text-[2rem] max-lg:leading-[2.7rem]">
             {originalPrice && <>$</>}
             {originalPrice}
           </p>
