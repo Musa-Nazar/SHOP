@@ -1,0 +1,17 @@
+/* STAY UPTO DATE ABOUT OUR LATEST OFFERS */
+
+position: absolute;
+width: 297px;
+height: 105px;
+left: 24px;
+top: 32px;
+
+font-family: 'Integral CF';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 35px;
+/* or 109% */
+
+color: #FFFFFF;
+

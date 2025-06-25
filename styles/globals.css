@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Integral Bold";
+  src: url("../Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf");
+}
+@font-face {
+  font-family: "Satoshi Regular";
+  src: url("../Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: "Satoshi Bold";
+  src: url("../Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf");
+}
+@font-face {
+  font-family: "Satoshi 500";
+  src: url("../Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
+}
+
+html {
+  font-size: 10px;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,7 +41,97 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.t-transform {
+  text-transform: capitalize;
+}
+
+.hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* HERO */
+.hero {
+  background: url("../public/assets/hero.svg"), #f2f0f1;
+  background-position: center;
+  background-size: cover;
+}
+
+/* SELECT */
+.select:has(> :hover) > :not(:hover) {
+  transform: perspective(100rem) translateZ(-2rem);
+  filter: blur(0.5rem);
+}
+
+.select:has(> :hover) > :not(:hover) img {
+  filter: grayscale(50%);
+}
+
+.select > div {
+  transition: all 0.5s linear;
+}
+
+/* SHADOW */
+.shadow {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* INTEGRAL */
+.integral-bold {
+  font-family: "Integral Bold", sans-serif;
+}
+/* SATOSHI */
+.satoshi-regular {
+  font-family: "Satoshi Regular", sans-serif;
+}
+.satoshi-bold {
+  font-family: "Satoshi Bold", sans-serif;
+}
+.satoshi-500 {
+  font-family: "Satoshi 500", sans-serif;
+}
+
+/* BTN HOVER */
+.hover-black {
+  transition: all 0.5s linear;
+}
+.hover-black:hover {
+  background-color: white;
+  color: black;
+}
+.hover-white {
+  transition: all 0.5s linear;
+}
+.hover-white:hover {
+  background-color: black;
+  color: white;
+}
+
+/* NO BTN */
+.no-btn::-webkit-inner-spin-button,
+.no-btn::-webkit-outer-spin-button {
+  display: none;
+}
+
+html:has(.stop-scroll) {
+  overflow: hidden;
+}
+.stop-scroll > ul {
+  opacity: 1;
+  transform: skew(0deg);
+  transition: opacity 0.3s linear 0.3s, transform 0.6s linear;
+}
+
+/* MEDIA */
+@media (max-width: 1024px) {
+  .hero {
+    background: url("../public/assets/hero.svg"), #f2f0f1;
+    background-position: bottom;
+    background-position-x: 90%;
+    background-size: calc(44.8rem * 2);
+    background-repeat: no-repeat;
+  }
 }
