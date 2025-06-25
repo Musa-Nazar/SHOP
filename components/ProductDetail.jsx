@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { renderedRating } from "@/uitls/renderedRatings";
 import { cartActions } from "@/store/store";
-import ColorSelector from "./colorSelector";
+import ColorSelector from "./ColorSelector";
 import SizeIcons from "./SizeIcons";
 
 function ProductDetail({ id }) {
