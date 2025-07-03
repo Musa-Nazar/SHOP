@@ -56,8 +56,8 @@ body {
 /* HERO */
 .hero {
   background: url("../public/assets/hero.svg"), #f2f0f1;
-  background-position: center;
-  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 /* SELECT */
